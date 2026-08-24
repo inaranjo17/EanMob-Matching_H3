@@ -1,6 +1,7 @@
 # app/main.py
 from fastapi import FastAPI
-from app.routers import health
+
+from app.routers import match
 
 app = FastAPI(
     title="EanMob Geo-Matching Service",
@@ -8,4 +9,4 @@ app = FastAPI(
     version="0.1.0",
 )
 
-app.include_router(health.router)
+app.include_router(match.router)
