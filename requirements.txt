@@ -7,3 +7,4 @@ mysql-connector-python==9.0.0
 pydantic==2.9.2
 pytest==8.3.3
 httpx==0.27.2
+sqlalchemy==2.0.35
