@@ -1,7 +1,10 @@
 # app/models/trayecto.py
-from sqlalchemy import Column, Integer, String, DECIMAL, TIMESTAMP, Enum
-from app.database import Base
 import enum
+
+from sqlalchemy import DECIMAL, TIMESTAMP, Column, Enum, Integer, String
+
+from app.database import Base
+
 
 class TripStatus(str, enum.Enum):
     open = "open"

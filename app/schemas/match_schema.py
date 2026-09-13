@@ -1,6 +1,7 @@
 ## app/schemas/match_schema.py
-from pydantic import BaseModel
 from datetime import datetime
+
+from pydantic import BaseModel
 
 
 class GeocodeRequest(BaseModel):

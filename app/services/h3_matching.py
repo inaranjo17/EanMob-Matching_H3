@@ -1,7 +1,9 @@
 # app/services/h3_matching.py
 from datetime import datetime, timedelta
+
 import h3
 from sqlalchemy.orm import Session
+
 from app.models.trayecto import Trayecto, TripStatus
 
 TIME_TOLERANCE_MINUTES = 30
