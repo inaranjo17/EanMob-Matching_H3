@@ -1,10 +1,11 @@
 # app/routers/match.py (agregar el endpoint)
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
+
 from app.database import get_db
-from app.services.h3_matching import find_candidates
-from app.schemas.match_schema import MatchFindRequest, MatchFindResponse, GeocodeRequest
+from app.schemas.match_schema import GeocodeRequest, MatchFindRequest, MatchFindResponse
 from app.services.geocoding import geocode_address
+from app.services.h3_matching import find_candidates
 
 router = APIRouter()
 
