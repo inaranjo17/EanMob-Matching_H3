@@ -8,8 +8,9 @@ class GeocodeRequest(BaseModel):
     address: str
 
 class MatchFindRequest(BaseModel):
-    origin_h3: str
+    origin_address: str
     target_time: datetime
+
 
 class MatchCandidate(BaseModel):
     id: int
@@ -18,6 +19,7 @@ class MatchCandidate(BaseModel):
     hora_inicio: datetime
     hora_fin: datetime | None
     nombre_prestador: str
+    score: float
 
 class MatchFindResponse(BaseModel):
     candidates: list[MatchCandidate]
