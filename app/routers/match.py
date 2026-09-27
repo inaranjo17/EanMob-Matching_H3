@@ -3,7 +3,12 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from app.database import get_db
-from app.schemas.match_schema import GeocodeRequest, MatchFindRequest, MatchFindResponse, MatchCandidate
+from app.schemas.match_schema import (
+    GeocodeRequest,
+    MatchCandidate,
+    MatchFindRequest,
+    MatchFindResponse,
+)
 from app.services.geocoding import geocode_address
 from app.services.h3_matching import find_candidates
 
